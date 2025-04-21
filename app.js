@@ -37,8 +37,8 @@ async function runQueryExamples() {
     await newUser.save();
 
     // Get all documents
-    // const allUsers = await User.find()
-    // console.log("All users", allUsers)
+    const allUsers = await User.find()
+    console.log("All users", allUsers)
 
     // Get specific Document
     // const getActiveFalseUsers = await User.find({isActive: true});
