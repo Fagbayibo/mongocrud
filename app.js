@@ -41,8 +41,8 @@ async function runQueryExamples() {
     console.log("All users", allUsers)
 
     // Get specific Document
-    // const getActiveFalseUsers = await User.find({isActive: true});
-    // console.log("Single User", getActiveFalseUsers);
+    const getActiveFalseUsers = await User.find({isActive: true});
+    console.log("Single User", getActiveFalseUsers);
 
     // Get specific by findOne
     // const getJohnDoe = await User.findOne({name: " John Doe"})
