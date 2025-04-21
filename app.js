@@ -45,8 +45,8 @@ async function runQueryExamples() {
     console.log("Single User", getActiveFalseUsers);
 
     // Get specific by findOne
-    // const getJohnDoe = await User.findOne({name: " John Doe"})
-    // console.log(getJohnDoe);
+    const getJohnDoe = await User.findOne({name: " John Doe"})
+    console.log(getJohnDoe);
 
     // // Get lastCreated user by Id
     //     const getLastCreatedUserByID = await User.findById(newUser._id)
