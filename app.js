@@ -48,17 +48,17 @@ async function runQueryExamples() {
     const getJohnDoe = await User.findOne({name: " John Doe"})
     console.log(getJohnDoe);
 
-    // // Get lastCreated user by Id
-    //     const getLastCreatedUserByID = await User.findById(newUser._id)
-    //     console.log('====================================');
-    //     console.log(getLastCreatedUserByID);
-    //     console.log('====================================');
+    // Get lastCreated user by Id
+        const getLastCreatedUserByID = await User.findById(newUser._id)
+        console.log('====================================');
+        console.log(getLastCreatedUserByID);
+        console.log('====================================');
 
     // Get single User By ID
-    // const getUserByID = await User.findById({_id : "68068f511c49c3b14a2b776c"})
-    // console.log('====================================');
-    // console.log(getUserByID);
-    // console.log('====================================');
+    const getUserByID = await User.findById({_id : "68068f511c49c3b14a2b776c"})
+    console.log('====================================');
+    console.log(getUserByID);
+    console.log('====================================');
 
     // Get selected fields
     // const selectedFields = await User.find().select('name email -_id')
