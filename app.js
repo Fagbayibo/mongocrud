@@ -61,28 +61,28 @@ async function runQueryExamples() {
     console.log('====================================');
 
     // Get selected fields
-    // const selectedFields = await User.find().select('name email -_id')
-    // console.log('====================================');
-    // console.log(selectedFields);
-    // console.log('====================================');
+    const selectedFields = await User.find().select('name email -_id')
+    console.log('====================================');
+    console.log(selectedFields);
+    console.log('====================================');
 
     // For pagination
-    // const limitedUsers = await User.find().limit(5).skip(1);
-    // console.log('====================================');
-    // console.log(limitedUsers);
-    // console.log('====================================');
+    const limitedUsers = await User.find().limit(5).skip(1);
+    console.log('====================================');
+    console.log(limitedUsers);
+    console.log('====================================');
 
     // Soring in descending order (-1) or ascending Order(1)
-    // const sortedUsers = await User.find().sort({age: -1})
-    // console.log('====================================');
-    // console.log(sortedUsers);
-    // console.log('====================================');
+    const sortedUsers = await User.find().sort({age: -1})
+    console.log('====================================');
+    console.log(sortedUsers);
+    console.log('====================================');
 
     // To count all documents available by specific
-    // const countDocuments = await User.countDocuments({isActive :  true})
-    // console.log('====================================');
-    // console.log(countDocuments);
-    // console.log('====================================');
+    const countDocuments = await User.countDocuments({isActive :  true})
+    console.log('====================================');
+    console.log(countDocuments);
+    console.log('====================================');
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Delete a User
